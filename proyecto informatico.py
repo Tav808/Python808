@@ -94,31 +94,39 @@ def Menu():
 
 Menu()
 
-CODIGO SHIN: (AHora arreglo todo eso es para q se guarde lo q hice ahora)
-
-"""Proyecto 8 “Adivina el Número”:
-
-● La computadora elige un número al azar.
-● El usuario intenta adivinarlo con pistas (“más alto” / “más bajo”).
-
-● Contar intentos.
-
-Proyecto 5 “Juego de Preguntas”:
-
-● Usar una lista o diccionario con preguntas y respuestas.
-● Contar cuántas acierta el jugador.
-● Mostrar puntaje final.
-
-Menu
-    interactivo para elegir el proyecto a ejecutar."""
-
+CODIGO SHIN: 
 def Adivina_el_Numero():
     import random
     numero_secreto = random.randint(1, 100)
     intentos = 0
     adivinado = False
 
-    print("¡Bienvenido al juego!")
+    print(r"/*  .--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--.  */")
+    print(r"/* / .. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \ */")
+    print(r"/* \ \/\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ \/ / */")
+    print(r"/*  \/ /`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'\/ /  */")
+    print(r"/*  / /\                                                        / /\  */")
+    print(r"/* / /\ \                                                      / /\ \ */")
+    print(r"/* \ \/ /                                                      \ \/ / */")
+    print(r"/*  \/ /         _       _ _       _                    _       \/ /  */")
+    print(r"/*  / /\        / \   __| (_)_   _(_)_ __   __ _    ___| |      / /\  */")
+    print(r"/* / /\ \      / _ \ / _` | \ \ / / | '_ \ / _` |  / _ \ |     / /\ \ */")
+    print(r"/* \ \/ /     / ___ \ (_| | |\ V /| | | | | (_| | |  __/ |     \ \/ / */")
+    print(r"/*  \/ /     /_/   \_\__,_|_| \_/ |_|_| |_|\__,_|  \___|_|      \/ /  */")
+    print(r"/*  / /\      _   _   __  __  __ _____ ____   ___  _            / /\  */")
+    print(r"/* / /\ \    | \ | |_/_/_|  \/  | ____|  _ \ / _ \| |          / /\ \ */")
+    print(r"/* \ \/ /    |  \| | | | | |\/| |  _| | |_) | | | | |          \ \/ / */")
+    print(r"/*  \/ /     | |\  | |_| | |  | | |___|  _ <| |_| |_|           \/ /  */")
+    print(r"/*  / /\     |_| \_|\___/|_|  |_|_____|_| \_\\___/(_)           / /\  */")
+    print(r"/* / /\ \                                                      / /\ \ */")
+    print(r"/* \ \/ /                                                      \ \/ / */")
+    print(r"/*  \/ /                                                        \/ /  */")
+    print(r"/*  / /\.--..--..--..--..--..--..--..--..--..--..--..--..--..--./ /\  */")
+    print(r"/* / /\ \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \/\ \ */")
+    print(r"/* \ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `' / */")
+    print(r"/*  `--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'  */")
+
+    print("¡Bienvenido al juego! 👾")
     print("Deberas adivinar el numero que he pensado, entre el 1 y el 100.")
     print("Tienes intentos ilimitados")
     print()
@@ -135,10 +143,10 @@ def Adivina_el_Numero():
             print("Mas bajo.")
         else:
             adivinado = True
-            print("¡Felicidades adivinaste!, el numero era", numero_secreto, "y usaste", intentos, "intentos.")
+            print("¡Felicidades adivinaste!, el número era", numero_secreto, "y usaste", intentos, "intentos.")
 
     print("Desea seguir jugando o ir al menu?")
-    continuar = input("Introduce 'jugar' para seguir jugando o 'menu' para ir al menu: ")
+    continuar = input("Introduce 'jugar' para seguir jugando o 'menu' para ir al menú: ")
     if continuar.lower() == 'jugar':
         Adivina_el_Numero()
     elif continuar.lower() == 'menu':
@@ -165,7 +173,32 @@ def Juego_de_Preguntas():
 
     puntaje = 0
 
-    print("¡Bienvenido al juego de preguntas!")
+    print(r"/*  .--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--.  */")
+    print(r"/* / .. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \ */")
+    print(r"/* \ \/\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ \/ / */")
+    print(r"/*  \/ /`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'\/ /  */")
+    print(r"/*  / /\                                                        / /\  */")
+    print(r"/* / /\ \                                                      / /\ \ */")
+    print(r"/* \ \/ /                                                      \ \/ / */")
+    print(r"/*  \/ /         _                              _               \/ /  */")
+    print(r"/*  / /\        | |_   _  ___  __ _  ___     __| | ___          / /\  */")
+    print(r"/* / /\ \    _  | | | | |/ _ \/ _` |/ _ \   / _` |/ _ \        / /\ \ */")
+    print(r"/* \ \/ /   | |_| | |_| |  __/ (_| | (_) | | (_| |  __/        \ \/ / */")
+    print(r"/*  \/ /     \___/ \__,_|\___|\__, |\___/   \__,_|\___|         \/ /  */")
+    print(r"/*  / /\     _ __  _ __ ___  ______   _ _ __ | |_ __ _ ___      / /\  */")
+    print(r"/* / /\ \   | '_ \| '__/ _ \/ _` | | | | '_ \| __/ _` / __|    / /\ \ */")
+    print(r"/* \ \/ /   | |_) | | |  __/ (_| | |_| | | | | || (_| \__ \    \ \/ / */")
+    print(r"/*  \/ /    | .__/|_|  \___|\__, |\__,_|_| |_|\__\__,_|___/     \/ /  */")
+    print(r"/*  / /\    |_|             |___/                               / /\  */")
+    print(r"/* / /\ \                                                      / /\ \ */")
+    print(r"/* \ \/ /                                                      \ \/ / */")
+    print(r"/*  \/ /                                                        \/ /  */")
+    print(r"/*  / /\.--..--..--..--..--..--..--..--..--..--..--..--..--..--./ /\  */")
+    print(r"/* / /\ \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \/\ \ */")
+    print(r"/* \ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `' / */")
+    print(r"/*  `--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'  */")
+
+    print("¡Bienvenido al juego de preguntas! 🎮 ⁉️")
     for pregunta, respuesta in preguntas.items():
         respuesta_usuario = input(pregunta + " ")
         if respuesta_usuario.lower() == respuesta.lower():
@@ -204,10 +237,10 @@ def Menu():
     print(r" \____|_|  \___|\__,_|_|\__|___/    ")
     print(r"------------------------------------")
         
-    print("1. Proyecto 8 “Adivina el Número”")
-    print("2. Proyecto 5 “Juego de Preguntas”")
+    print("1. Proyecto 8 “Adivina el Número” ️🎰")
+    print("2. Proyecto 5 “Juego de Preguntas” 🕹️")
 
-    eleccion = input("Elige el proyecto a ejecutar (1, 2 o 3): ")
+    eleccion = input("Elige el proyecto a ejecutar (1 o 2): ")
     print()
     if eleccion == '1':
         Adivina_el_Numero()

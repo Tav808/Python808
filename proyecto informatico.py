@@ -79,17 +79,49 @@ def Juego_de_Preguntas():
     print("Tu puntaje final es:", puntaje)
 
 def Menu():
-    print("1. Proyecto 8 “Adivina el Número”")
-    print("2. Proyecto 5 “Juego de Preguntas”")
-    eleccion = input("Elige el proyecto a ejecutar (1 o 2): ")
+    print("-------------------------------------------------------------------------")
+    print(r"/*  .--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--.  */")
+    print(r"/* / .. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \ */")
+    print(r"/* \ \/\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ \/ / */")
+    print(r"/*  \/ /`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'\/ /  */")
+    print(r"/*  / /\                                                        / /\  */")
+    print(r"/* / /\ \                                                      / /\ \ */")
+    print(r"/* \ \/ /                                                      \ \/ / */")
+    print(r"/*  \/ /     __  __ _____ _   _ _   _                           \/ /  */")
+    print(r"/*  / /\    |  \/  | ____| \ | | | | |                          / /\  */")
+    print(r"/* / /\ \   | |\/| |  _| |  \| | | | |                         / /\ \ */")
+    print(r"/* \ \/ /   | |  | | |___| |\  | |_| |                         \ \/ / */")
+    print(r"/*  \/ /    |_|  |_|_____|_| \_|\___/                           \/ /  */")
+    print(r"/*  / /\                                                        / /\  */")
+    print(r"/* / /\ \                                                      / /\ \ */")
+    print(r"/* \ \/ /                                                      \ \/ / */")
+    print(r"/*  \/ /                                                        \/ /  */")
+    print(r"/*  / /\.--..--..--..--..--..--..--..--..--..--..--..--..--..--./ /\  */")
+    print(r"/* / /\ \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \/\ \ */")
+    print(r"/* \ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `' / */")
+    print(r"/*  `--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'  */")
+    print("-------------------------------------------------------------------------")
+    print("🎮   M   E   N   U   🎮")
+    print("-------------------------------------------------------------------------")
+    print("1️⃣  Proyecto 8 “Adivina el Número” ")
+    print("2️⃣  Proyecto 5 “Juego de Preguntas” ")
+    print("3️⃣  Salir ")
+    print("-------------------------------------------------------------------------")
+
+    eleccion = input(" Elige el proyecto a ejecutar (1, 2 o 3): ")
     print()
+
     if eleccion == '1':
         Adivina_el_Numero()
     elif eleccion == '2':
         Juego_de_Preguntas()
+    elif eleccion == '3':
+        print("¡Gracias por jugar! ")
+        exit()
     else:
-        print("Opción no válida. Por favor, elige 1 o 2.")
+        print("Opción no válida. Por favor, elige 1, 2 o 3.")
         Menu()
+
 
 
 Menu()
@@ -258,3 +290,4 @@ def Menu():
         Menu()
 
 Menu()
+
